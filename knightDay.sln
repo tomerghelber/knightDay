@@ -1,11 +1,12 @@
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
-
-Project("{AF4CDB9E-EF86-39A1-F9AE-0D49C9B0AA2A}") = "knightDay", "Assembly-CSharp-firstpass.csproj", "{A534162A-EB2B-E091-3998-850A97B24EB9}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-firstpass", "Assembly-CSharp-firstpass.csproj", "{A534162A-EB2B-E091-3998-850A97B24EB9}"
 EndProject
-Project("{AF4CDB9E-EF86-39A1-F9AE-0D49C9B0AA2A}") = "knightDay", "Assembly-CSharp.csproj", "{5E9C11E0-364E-7F22-CD38-5814F37274B0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{5E9C11E0-364E-7F22-CD38-5814F37274B0}"
 EndProject
-Project("{AF4CDB9E-EF86-39A1-F9AE-0D49C9B0AA2A}") = "knightDay", "Assembly-CSharp-Editor.csproj", "{BA078693-70AE-066A-82C6-9C8B6DC6751F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{BA078693-70AE-066A-82C6-9C8B6DC6751F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

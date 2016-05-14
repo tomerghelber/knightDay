@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System;
 using System.Collections;
 
 public class Movement : MonoBehaviour {
@@ -8,22 +9,29 @@ public class Movement : MonoBehaviour {
     public int speed;
 
     public Transform enemy;
+
+    private double min = -1;
 	
 	// Update is called once per frame
 	void Update () {
         Vector3 distance = transform.position - enemy.transform.position;
-        if (distance.sqrMagnitude > 400)
-        {
-            Time.timeScale = 1F;
-        }
-        else if (distance.sqrMagnitude > 200)
-        {
-            Time.timeScale = 0.5F;
-        }
-        else
-        {
-            Time.timeScale = 0.1F;
-        }
+        Time.timeScale = calcTimeScale(distance.sqrMagnitude);
+        Debug.Log(Time.timeScale);
+        Debug.Log(distance.sqrMagnitude);
         transform.Translate(direction * speed * Time.deltaTime);
+    }
+
+    private float calcTimeScale(float distanceSqrMagnitude)
+    {
+        float wanted = (distanceSqrMagnitude - 25000) / 45000;
+        if (wanted > 1F)
+        {
+            return 1F;
+        }
+        if (wanted < 0.1F)
+        {
+            return 0.1F;
+        }
+        return wanted;
     }
 }
